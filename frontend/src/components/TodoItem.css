@@ -1,0 +1,42 @@
+.TodoItem {
+display: flex;
+gap: 20px;
+padding-bottom: 20px;
+border-bottom: 1px solid peachpuff;
+/* justify-content: space-between; */
+}
+.TodoItem.isCompleted{
+    background-color: rgb(201, 219, 236);
+}
+
+.TodoItem .content {
+    flex: 1;
+}
+.TodoItem .date{
+font-size: 14px;
+color: olive;
+}
+.btn-wrap{
+    display: flex;
+    gap: 10px;
+}
+.TodoItem button {
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: ghostwhite;
+}
+.updateBtn{
+background-color: rgb(0, 255, 191);
+}
+.deleteBtn{
+    background-color: orange;
+}
+.TodoItem.isCompleted.content{
+    text-decoration: line-through;
+    color: blueviolet;
+}
+
+
