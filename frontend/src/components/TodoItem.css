@@ -1,42 +1,66 @@
-.TodoItem {
-display: flex;
-gap: 20px;
-padding-bottom: 20px;
-border-bottom: 1px solid peachpuff;
-/* justify-content: space-between; */
+.edit-wrap,
+.content-wrap {
+    display: flex;
+    width: 100%;
+    gap: 20px;
 }
-.TodoItem.isCompleted{
-    background-color: rgb(201, 219, 236);
+    .TodoItem{
+    display: flex;
+    gap: 20px;
+    padding: 10px ;
+    border-bottom: 1px solid #eee;
+}
+
+.TodoItem.isCompleted {
+    background-color: #f1f1f1;
+}
+
+.edit-wrap input {
+flex: 1;
+border: 1px solid black;
+border-radius: 5px;
 }
 
 .TodoItem .content {
     flex: 1;
 }
-.TodoItem .date{
-font-size: 14px;
-color: olive;
+
+.TodoItem .date {
+    font-size: 14px;
+    color: gray;
 }
-.btn-wrap{
+
+.btn-wrap {
     display: flex;
     gap: 10px;
 }
+
 .TodoItem button {
     cursor: pointer;
     font-size: 14px;
     border: none;
     border-radius: 5px;
     padding: 5px;
-    color: ghostwhite;
+    color: #fff
 }
-.updateBtn{
-background-color: rgb(0, 255, 191);
-}
-.deleteBtn{
+
+.updateBtn {
     background-color: orange;
 }
-.TodoItem.isCompleted.content{
-    text-decoration: line-through;
-    color: blueviolet;
+
+.updateBtn:hover {
+    background-color:  darkkhaki;
 }
 
+.deleteBtn {
+    background-color: darkcyan;
+}
 
+.deleteBtn:hover {
+    background-color: indianred;
+}
+
+.TodoItem.isCompleted .content {
+    text-decoration: line-through;
+    color: gray;
+}

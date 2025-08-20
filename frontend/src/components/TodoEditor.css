@@ -1,20 +1,24 @@
 .TodoEditor {
-display: flex;
-gap: 10px;
+    display: flex;
+    gap: 10px;
 }
+
 .TodoEditor input {
-flex: 1;
-padding: 15px;
-border: 2px dotted navy;
-border-radius: 5px;
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
 }
+
 .TodoEditor button {
-cursor: pointer;
-background-color: paleturquoise;
-border: 2px dotted navy;
-border-radius: 5px;
-width: 80px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    width: 80px;
+    background-color: chocolate;
 }
+
 .TodoEditor button:hover {
-    background-color: navy;
+    background-color: tomato;
 }
